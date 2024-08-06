@@ -125,6 +125,7 @@ i {
       width: fit-content;
       font-size: 1em;
       margin: 0;
+      color: rgb(137, 2, 2);
     }
   }
   .back-content {
@@ -179,6 +180,45 @@ i {
     .conclusion {
       color: beige;
     }
+  }
+  .back {
+    border-color: rgb(184, 11, 11);
+    border-style: solid;
+  }
+  .back-content {
+    font-size: 1.2em;
+    p {
+      padding-left: 2%;
+      border-bottom-style: dashed;
+      border-color: rgb(184, 11, 11);
+      height: fit-content;
+    }
+    .fin {
+      border-bottom-style: none;
+      color: rgb(184, 11, 11);
+      border-right: solid rgb(184, 11, 11);
+      overflow: hidden;
+      animation: typer 7s steps(50, end) forwards infinite, blink 0.8s infinite;
+      height: 20px;
+    }
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: rgb(184, 11, 11);
+  }
+}
+
+@keyframes typer {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 

@@ -7,6 +7,7 @@ const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
 const paper3 = document.querySelector("#p3");
 
+const conclusion = document.querySelector(".conclusion");
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
@@ -80,4 +81,12 @@ function goPrevPage() {
 
     currentLocation--;
   }
+}
+
+function black() {
+  setInterval((conclusion.style.color = "black"), 1000);
+}
+
+function beige() {
+  conclusion.style.color = "beige";
 }
